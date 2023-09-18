@@ -1,0 +1,338 @@
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glowAndBack 11s ease-in-out forwards;
+    animation-delay: 9s;
+}
+
+
+@keyframes glowAndBack {
+    0%{
+        background-color: #000000;
+    }
+
+    100% {
+        background-color: rgb(63, 8, 8);
+    }
+}
+
+
+.container, .console {
+  opacity: 0.7; 
+  transition: opacity 1s ease-in-out; 
+  animation: fadeIn 2s ease-in-out forwards; 
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0.2; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+
+.hint{
+  color: white;
+  display: flex;
+  margin: 3vh;
+  width: 95%;
+  font-size: larger;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+}
+
+.hint i:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.animated-heading {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 1vw;
+}
+
+
+.container h1 {
+    font-size: 24px;
+    animation: loading-animation 1s steps(1) infinite, loading-dots 1.5s infinite;
+  }
+
+  @keyframes loading-dots {
+    0% {
+      content: " ";
+    }
+    25% {
+      content: ".";
+    }
+    50% {
+      content: "..";
+    }
+    75% {
+      content: "...";
+    }
+  }
+
+
+.glitch{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: glitch-animation 1s linear 16s 1;
+  }
+
+  @keyframes glitch-animation {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-5px, 5px);
+    }
+    40% {
+      transform: translate(5px, -5px);
+    }
+    60% {
+      transform: translate(-5px, 5px);
+    }
+    80% {
+      transform: translate(5px, -5px);
+    }
+  }
+
+.glow {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    animation: pulsate 4s infinite; 
+    animation-delay: 14s;
+  }
+
+@keyframes pulsate {
+    0% {
+      box-shadow: inset 0 0 40px rgba(255, 1, 1, 0.722); 
+    }
+    50% {
+      box-shadow: inset 0 0 38px rgba(255, 1, 1, 0.411); 
+    }
+    100% {
+      box-shadow: inset 0 0 40px rgba(255, 1, 1, 0.661); 
+    
+  }
+}
+  
+.glow2{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    animation: pulsate2 14s forwards;
+}
+
+@keyframes pulsate2 {
+    0% {
+      box-shadow: inset 0 0 8px rgba(1, 242, 255, 0.185); 
+    }
+    50% {
+      box-shadow: inset 0 0 38px rgba(1, 238, 255, 0.411); 
+    }
+    99% {
+      box-shadow: inset 0 0 45px rgba(1, 251, 255, 0.649); 
+  }
+
+  100%{
+    display: none;
+  }
+
+}
+  
+  
+
+
+.container {
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 250%;
+    text-align: center;
+}
+
+.loading {
+    width: 100%;
+    max-width: 40rem;
+    height: 1rem;
+    border: #ffffffea solid 2px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.loading::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgb(23, 23, 23); 
+    animation: loadingAnimation 15s ease-in-out forwards;
+}
+
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0;
+    }
+
+    10%{
+        background-color: rgb(24, 66, 66);
+    }
+
+    25%{
+        background-color: rgb(24, 96, 96);
+    }
+
+    50%{
+        background-color: rgb(44, 176, 188);
+    }
+
+    75%{
+        background-color: aqua;
+    }
+
+    85%{
+        background-color: rgb(8, 245, 245);
+    }
+
+    100% {
+        width: 75%;
+        background-color: red;
+    }
+}
+
+
+.loadin2 {
+  width: 100%;
+  max-width: 40rem;
+  height: 1rem;
+  border: #ffffffea solid 2px;
+  border-radius: 10px;
+  overflow: hidden; 
+  background-color: white;
+}
+
+.loadin2::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: rgb(23, 23, 23); 
+  animation: loadinAnimation 15s ease-in-out forwards;
+}
+
+@keyframes loadinAnimation {
+  0% {
+      width: 0;
+  }
+
+  10%{
+      background-color: rgb(24, 66, 66);
+  }
+
+  25%{
+      background-color: rgb(24, 96, 96);
+  }
+
+  50%{
+      background-color: rgb(44, 176, 188);
+  }
+
+  75%{
+      background-color: aqua;
+  }
+
+  85%{
+      background-color: rgb(0, 236, 225);
+  }
+
+  100% {
+      width: 100%;
+      background-color: rgb(0, 255, 213);
+  }
+}
+
+.container2 {
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1vw;
+}
+
+.container2 h1 {
+    font-size: 1.5rem;
+    margin-left: 1vw;
+}
+
+.console{
+  width: 22%;
+  z-index: 999999999999999999999999999999999;
+  height: 70%; 
+  border: #ffffffd3 solid 1px;
+  border-radius: 5px;
+  margin-right: 15%;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .console {
+    width: 100%;
+    height: auto; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .console {
+    width: 100%; 
+  }
+}
+
+.console p{
+  margin: 1vw;
+}
+
+.input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  width: 80%;
+  opacity: 1;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+#loading{
+  white-space: nowrap;
+}

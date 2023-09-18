@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labirinto Maluco</title>
+</head>
+<body>
+    <div class="stars-bg">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
+    
+   
+
+    <div class="game-container">
+        <div class="character" id="character"> <i class="fas fa-chevron-up"></i> </div>
+    
+        <div class="wall" style="left: 100px; top: 0px; width: 20px; height: 90%;"></div>
+        <div class="wall" style="left: 200px; bottom: 0px; width: 20px; height: 90%;"></div>
+        <div class="wall movable" style="left: 300px; top: 0px; width: 20px; height: 200px;"></div>
+        <div class="wall" style="left: 300px; bottom: 0px; width: 20px; height: 50%;"></div>
+        <div class="wall" style="left: 400px; top: 100px; width: 20px; height: 99%;"></div>
+        <div class="wall" style="left: 500px; top: 0px; width: 20px; height: 50%;"></div>
+        <div class="wall" style="left: 500px; bottom: 0px; width: 20px; height: 45%;"></div>
+        <div class="wall" style="left: 600px; bottom: 0px; width: 20px; height: 70%;"></div>
+        <div class="wall" style="left: 600px; top: 0px; width: 20px; height: 20%;"></div>
+        <div class="wall" style="left: 700px; top: 0px; width: 20px; height: 75%;"></div>
+
+
+        <div class="wall movable2" style="left: 800px; top: 0px; width: 20px; height: 20%;"></div>
+    
+        <div class="wall" style="left: 900px; bottom: 0px; width: 20px; height: 90%;"></div>
+        <div class="wall" style="left: 1000px; top: 0px; width: 20px; height: 80%;"></div>
+        <div class="wall" style="left: 1100px; bottom: 0px; width: 20px; height: 50%;"></div>
+        <div class="wall" style="left: 1100px; top: 0px; width: 20px; height: 45%;"></div>
+        <div class="wall" style="left: 1200px; top: 150px; width: 20px; height: 90%;"></div>
+        <div class="wall" style="left: 1300px; top: 0px; width: 20px; height: 90%;"></div>
+
+        <div class="wall special" id="specialCircle" style="margin-left: 95%; bottom: 2.5vh;"></div>
+
+        <div class="controler">
+            <div class="controlerspot">
+
+                <div class="hint" id="show-Popup">
+                    <i class="fas fa-lightbulb lamp-icon" onclick="alert('Ao chegar na Bolinha branca que brilha apenas fique colidindo com ela até passar de fase')"></i>
+                    <i class="fa-solid fa-forward" id="HIHIHI"></i>
+                </div>
+             
+                <h1>Controles</h1>
+                <div class="ins">
+                    <h1>
+                        <i class="fa-regular fa-keyboard"></i> <br>W A S D <br>
+                        <span class="small">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-up"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <br>
+                        <button id="okButton">Ok</button>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+  
+
+    <script src="script1.js"></script>
+    <audio id="audio" autoplay loop>
+        <source src="audio/HEYY!.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
