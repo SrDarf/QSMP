@@ -67,15 +67,15 @@ setTimeout(() => {
                                 
                                 inputElement.addEventListener("input", function() {
                                     if (inputElement.value === "14 15 5 20 13") {
-                                        window.location.href = "LEVEL 7/index.html"; 
+                                        window.location.href = "LEVEL 7/index1.html"; 
                                     }
 
                                     if (inputElement.value === "141552013") {
-                                        window.location.href = "LEVEL 7/index.html"; 
+                                        window.location.href = "LEVEL 7/index1.html"; 
                                     }
 
                                     if (inputElement.value === "1415052013") {
-                                        window.location.href = "LEVEL 7/index.html"; 
+                                        window.location.href = "LEVEL 7/index1.html"; 
                                     }
 
                                 });
